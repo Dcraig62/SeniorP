@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    <item android:id="@+id/Geomtry"
+        android:title="Geomtry">
+
+        <menu>
+            <group>
+                <item android:id="@+id/Prisms"
+                android:title="Prisms"/>
+                <item android:id="@+id/Pyramids"
+                android:title="Pyramids"/>
+                <item android:id="@+id/Spheres"
+                android:title="Spheres"/>
+                <item android:id="@+id/Cylinders"
+                    android:title="Cylinders"/>
+            </group>
+        </menu>
+    </item>
+    <item android:id="@+id/Other"
+        android:title="Other"/>
+    <item android:id="@+id/Stuff"
+        android:title="Stuff"/>
+
+</menu>
