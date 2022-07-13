@@ -76,7 +76,6 @@ public class LessonActivity extends AppCompatActivity {
                 lesson_circle();
                 break;
         }
-
     }
 
 
@@ -234,5 +233,9 @@ public class LessonActivity extends AppCompatActivity {
         Intent intent = new Intent(this, lessonsAndTest.class);
         intent.putExtra("shape", shape);
         startActivity(intent);
+    }
+
+    public void back(View view){
+        finish();
     }
 }

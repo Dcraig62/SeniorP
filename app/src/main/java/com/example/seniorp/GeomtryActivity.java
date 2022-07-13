@@ -37,8 +37,37 @@ public class GeomtryActivity extends AppCompatActivity {
         lesson(view, "circle");
     }
 
+    public void prismTest(View view){
+        lessonTest(view, "rectangular prism");
+    }
+    public void sphereTest(View view){
+        lessonTest(view, "sphere");
+    }
+    public void pyramidTest(View view){
+        lessonTest(view, "pyramid");
+    }
+    public void cylinderTest(View view){
+        lessonTest(view, "cylinder");
+    }
+
+    public void quadTest(View view){
+        lessonTest(view, "rectangle");
+    }
+    public void triangleTest(View view){
+        lessonTest(view, "triangle");
+    }
+    public void circleTest(View view){
+        lessonTest(view, "circle");
+    }
+
     public void lesson(View view, String type){
         Intent intent = new Intent(this, LessonActivity.class);
+        intent.putExtra("shape", type);
+        startActivity(intent);
+    }
+
+    public void lessonTest(View view, String type){
+        Intent intent = new Intent(this, lessons3.class);
         intent.putExtra("shape", type);
         startActivity(intent);
     }
