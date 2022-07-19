@@ -24,6 +24,8 @@ import com.google.ar.sceneform.ux.TransformableNode;
 
 import java.util.Objects;
 
+
+//These are the practice test where it is randomized to display one of three possible problems
 public class lessons3 extends AppCompatActivity {
 
     private ArFragment arCam;

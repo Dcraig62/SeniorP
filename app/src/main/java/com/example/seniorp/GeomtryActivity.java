@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+
+// This is the menu activity
+// Holds all the buttons and changes to the geometry menu
 public class GeomtryActivity extends AppCompatActivity {
 
     @Override
@@ -14,6 +17,7 @@ public class GeomtryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_geomtry);
     }
 
+    // these map to the lesson activity with the name sent to the activity
     public void prism(View view){
         lesson(view, "rectangular prism");
     }
@@ -37,6 +41,7 @@ public class GeomtryActivity extends AppCompatActivity {
         lesson(view, "circle");
     }
 
+    // Test buttons send to lesson3 activity
     public void prismTest(View view){
         lessonTest(view, "rectangular prism");
     }
@@ -65,6 +70,7 @@ public class GeomtryActivity extends AppCompatActivity {
         intent.putExtra("shape", type);
         startActivity(intent);
     }
+
 
     public void lessonTest(View view, String type){
         Intent intent = new Intent(this, lessons3.class);

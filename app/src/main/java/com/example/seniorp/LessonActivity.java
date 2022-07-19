@@ -30,13 +30,14 @@ import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
 import java.util.EnumSet;
 import java.util.Objects;
 
+// lesson activity shows the equations for the lessons and then allows the user
+// to go to practice example
 public class LessonActivity extends AppCompatActivity {
 
     Session session;
     SharedCamera sharedCamera;
     String cameraId;
-    CameraManager cameraManager;
-    //ArFragment arCam;
+
     String shape;
 
     @Override
@@ -50,9 +51,6 @@ public class LessonActivity extends AppCompatActivity {
 
         TextView title = (TextView)findViewById(R.id.textView6);
         title.setText(type);
-        //CameraDevice.StateCallback wrappedCallback = sharedCamera.createARDeviceStateCallback(cameraDeviceCallback, backgroundHandler);
-        //cameraManager = (CameraManager) this.getSystemService(Context.CAMERA_SERVICE);
-        //cameraManager.openCamera(cameraId, wrappedCallback, backgroundHandler);
         switch (type) {
             case "rectangular prism":
                 lesson_prism();
